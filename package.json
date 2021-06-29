@@ -9,9 +9,12 @@
   "devDependencies": {
     "@tsconfig/svelte": "^2.0.1",
     "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.6",
     "css-minimizer-webpack-plugin": "^3.0.2",
+    "eslint": "^7.29.0",
     "mini-css-extract-plugin": "^1.6.2",
     "svelte": "^3.38.3",
     "svelte-check": "^2.2.0",
