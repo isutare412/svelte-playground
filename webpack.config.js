@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 const sveltePreprocess = require("svelte-preprocess");
 
@@ -54,6 +55,9 @@ module.exports = {
         },
       },
     ],
+  },
+  optimization: {
+    minimizer: [new CssMinimizerPlugin(), "..."],
   },
   mode,
   plugins: [
