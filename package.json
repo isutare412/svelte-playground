@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack serve --content-base public --port 4181",
+    "dev": "webpack serve --content-base public",
     "validate": "svelte-check"
   },
   "devDependencies": {
