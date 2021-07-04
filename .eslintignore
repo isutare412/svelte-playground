@@ -1,5 +1,3 @@
-# webpack
-webpack.config.js
-
-# eslint
-.eslintrc.js
+# Config files
+/*rc.js
+/*.config.js

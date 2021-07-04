@@ -39,13 +39,18 @@ module.exports = {
             },
             emitCss: prod,
             hotReload: !prod,
-            preprocess: sveltePreprocess({ sourceMap: !prod }),
+            preprocess: sveltePreprocess({
+              sourceMap: !prod,
+              postcss: {
+                plugins: [require("tailwindcss"), require("autoprefixer")],
+              },
+            }),
           },
         },
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         // required to prevent errors from Svelte on Webpack 5+
